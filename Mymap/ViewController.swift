@@ -36,6 +36,5 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         // デフォルト動作を行うのでtrueを返す(4)
         return true
-    
+    }
 }
-
