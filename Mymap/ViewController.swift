@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class ViewController: UIViewController {
 
@@ -15,6 +16,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBOutlet weak var inputText: UITextField!
+    
+    @IBOutlet weak var dispMap: MKMapView!
+    
 }
 
