@@ -30,6 +30,9 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HRa-jy-aDv">
                                 <rect key="frame" x="0.0" y="85" width="375" height="582"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnB-yx-RaE">
+                                <rect key="frame" x="337" y="621" width="22" height="38"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -38,9 +41,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SvL-CW-ssW" secondAttribute="trailing" id="Jvy-bU-4T4"/>
                             <constraint firstItem="HRa-jy-aDv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NIz-QU-uJh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HRa-jy-aDv" secondAttribute="bottom" id="NP7-Ij-PqQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cnB-yx-RaE" secondAttribute="trailing" constant="16" id="ecV-W8-xG5"/>
+                            <constraint firstItem="cnB-yx-RaE" firstAttribute="top" secondItem="SvL-CW-ssW" secondAttribute="bottom" constant="571" id="gJp-mV-hPi"/>
                             <constraint firstItem="SvL-CW-ssW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jiO-fm-sRJ"/>
                             <constraint firstItem="HRa-jy-aDv" firstAttribute="top" secondItem="SvL-CW-ssW" secondAttribute="bottom" constant="35" id="n91-Zn-CMa"/>
                             <constraint firstItem="SvL-CW-ssW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="o3y-uI-SyU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cnB-yx-RaE" secondAttribute="bottom" constant="8" id="yEv-iw-oTa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
