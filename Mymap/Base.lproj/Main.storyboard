@@ -28,7 +28,7 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="search"/>
                             </textField>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HRa-jy-aDv">
-                                <rect key="frame" x="0.0" y="85" width="375" height="582"/>
+                                <rect key="frame" x="0.0" y="50" width="375" height="617"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnB-yx-RaE">
                                 <rect key="frame" x="337" y="621" width="22" height="38"/>
@@ -52,6 +52,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cnB-yx-RaE" secondAttribute="bottom" constant="8" id="yEv-iw-oTa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="n91-Zn-CMa"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="dispMap" destination="HRa-jy-aDv" id="ibn-H5-XXM"/>
