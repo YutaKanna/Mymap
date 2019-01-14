@@ -32,6 +32,31 @@ class ViewController: UIViewController, UITextFieldDelegate {
             
             // 入力された文字列をデバッグエリアに表示(3)
             print(searchKey)
+            
+            // CLGeocoderインスタンスを取得(5)
+            let geocoder = CLGeocoder()
+            
+            // 入力された文字から位置情報を取得(6)
+            geocoder.geocodeAddressString(searchKey, completionHandler: { (placemarks, error) in
+                
+                // 位置情報が存在する場合はunwrapPlacemarksに取り出す(7)
+                if let unwrapPlacemarks = placemarks {
+                    
+                    // 1件目の情報を取り出す(8)
+                    if let firstPlacemark = unwrapPlacemarks.first {
+                        
+                        // 位置情報を取り出す(9)
+                        if let location = firstPlacemark.location {
+                            
+                            // 位置情報から緯度経度をtargetCoordinateに取り出す(10)
+                            let targetCoordinate = location.coordinate
+                            
+                            // 緯度経度をデバッグエリアに表示(11)
+                            print(targetCoordinate)
+                        }
+                    }
+                }
+            })
         }
         
         // デフォルト動作を行うのでtrueを返す(4)
